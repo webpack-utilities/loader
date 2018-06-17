@@ -1,0 +1,34 @@
+{
+  "name": "@webpack-utilities/loader",
+  "version": "0.0.1",
+  "description": "webpack Loader Utils",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "json5": "^1.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "del-cli": "^1.0.0",
+    "jest": "^23.0.0",
+    "standard": "^11.0.0",
+    "standard-version": "^4.0.0"
+  },
+  "scripts": {
+    "lint": "standard --env jest",
+    "test": "jest --verbose --coverage",
+    "clean": "del-cli coverage",
+    "release": "commitlint --to 'HEAD' && standard-version"
+  },
+  "author": "Michael Ciniawsky (@michael-ciniawsky) <michael.ciniawsky@gmail.com>",
+  "bugs": "https://github.com/webpack-utilities/loader/issues",
+  "homepage": "https://github.com/webpack-utilities/loader",
+  "repository": "https://github.com/webpack-utilities/loader.git",
+  "license": "MIT"
+}
